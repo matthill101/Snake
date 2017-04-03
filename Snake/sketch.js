@@ -52,7 +52,9 @@ textFont("Georgia");
 
 function draw() {
     
+    if (gamestate == 1) {
     frameRate(speed);
+    }
     
     print(underbodyworked)
     //print(snake[1].x)
@@ -79,6 +81,8 @@ function draw() {
         
         fill(255);
         text(prevscore, 350,575)
+        
+        frameRate(60);
     }
     
 //FILLING VAR WITH MULTIPLES OF FIVE
