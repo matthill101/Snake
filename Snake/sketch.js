@@ -189,7 +189,7 @@ function SnakePart(x,y) {
     
     this.x = x;
     this.y = y;
-    this.col = 255;
+    this.col = [0,153,0];
     this.lifespan = level*100
     
     this.display = function() {    
@@ -274,9 +274,6 @@ function keyPressed() {
         direction = 3;
     } 
 }
-
-
-
 
 
 
